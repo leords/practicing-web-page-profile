@@ -1,0 +1,42 @@
+.container {
+    max-width: 100%;
+    height: 25vh;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+}
+
+.options {
+    display: flex;
+    margin: 100px;
+
+    p {
+        color: #494949;
+        margin: 30px;
+        font-size: 18px ;
+        font-family: Roboto, sans-serif;
+        font-weight: 700;
+    }
+
+    p:hover {
+        font-size: 22px ;
+        font-weight: 700;
+    }
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
