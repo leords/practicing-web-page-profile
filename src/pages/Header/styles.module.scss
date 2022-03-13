@@ -1,39 +1,36 @@
 .container {
-    max-width: 100%;
-    height: 25vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
 }
 
-.menu {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(255, 255, 255);
-}
+
 
 .options {
     display: flex;
-    margin: 100px;
+    align-items: center;
+    justify-content: center;
 
-    p {
+    a {
         color: #494949;
-        margin: 30px;
         font-size: 18px ;
         font-family: Roboto, sans-serif;
         font-weight: 700;
+        text-decoration: none;
     }
 
-    p:hover {
+    a:hover {
         font-size: 22px ;
         font-weight: 700;
     }
 }
 
 .logo {
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
 
     img {
         width: 200px;

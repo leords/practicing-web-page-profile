@@ -1,16 +1,19 @@
 .container {
+    margin: 0 auto;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
     margin-top: 80px;
+
+    h1 {
+        margin-bottom: 80px;
+        text-align: center;
+        font-size: 30px;
+        font-family: Roboto, sans-serif;
+        font-weight: 700;
+    }
 }
-h1 {
-    text-align: center;
-    margin-bottom: 60px;
-    font-size: 30px;
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-}
+
 
 .images {
     max-width: 1200px;
@@ -31,21 +34,47 @@ h1 {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 5px;
         //filter: grayscale(90%);
-        filter: contrast(35%);
-        transition: all 0.7s;
+        transition: all 0.9s;
+    }
+
+    .visibleLegend {
+        display: none;
+        height: 50px;
+        background-color: rgb(248, 248, 248);
+        border-radius: 10px;
+        padding: 10px;
+
+        h1 {
+            font-size: 18px;
+            font-family: Roboto, sans-serif;
+            font-weight: 400;
+        }
     }
 
     img:hover {
-        filter: contrast(100%);
-        transform: scale(0.9);
-        transition: all 0.7s;
+        transform: scale(1.2);
+        transition: all 0.9s;
+    }
+
+    img:hover + p {
+      
+        transition: all 0.9s;
+
+        margin-top: 100px;
+        font-size: 16px;
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+
     }
 
     p {
-        margin-bottom: 60px;
+        //margin-bottom: 60px;
         font-size: 16px;
         font-family: Roboto, sans-serif;
-        font-weight: 100;
+        font-weight: 400;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 5px;
     }
 
 

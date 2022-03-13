@@ -8,8 +8,6 @@ export function Profile() {
     return(
         <div className={styles.container}>
             <div className={styles.containerItem}>
-                <div className={styles.containerBody}>
-
                     <div className={styles.profile}>
                         <div className={styles.image}>
                             <img src={profileImage} alt="" className={styles.imgProfile}/>
@@ -23,7 +21,6 @@ export function Profile() {
                         </div>
                     </div>
 
-                </div>
             </div>  
         </div>  
     )

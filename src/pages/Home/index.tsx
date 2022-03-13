@@ -2,35 +2,37 @@ import React from "react";
 
 import styles from './styles.module.scss'
 
-import logo from '../../assets/logo-escuro.png';
-
 import { CarouselItem } from "../Carousel";
 import { Header } from "../Header";
 import { Profile } from "../Profile";
 import { Contact } from "../Contact";
 import { Footer } from "../Footer";
 import { TypeProject } from "../TypeProject";
+import { TopAnchor } from "../../component/TopAnchor";
 
 
 export function Home() {
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
+            <div id="Home">
                 <Header />
             </div>
-            <div className={styles.carousel}>
+            <div>
                 <CarouselItem />
             </div>
-            <div className={styles.profile}>
+            <div id="Profile" className={styles.profile}>
                 <Profile />
             </div>
-            <div>
+            <div className={styles.topAnchor}>
+                <TopAnchor />
+            </div>
+            <div id="Project" className={styles.project}>
                 <TypeProject />
             </div>
-            <div className={styles.containerContact}>
+            <div id="Contact" className={styles.contact}>
                 <Contact />
             </div>
-            <div className={styles.separator}>
+            <div >
                 <Footer />
             </div>
         </div>

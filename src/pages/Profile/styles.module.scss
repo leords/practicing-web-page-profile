@@ -1,4 +1,5 @@
 .container {
+    margin: 0 auto;
     position: relative;
     max-width: 1200px;
     height: 600px;
@@ -9,33 +10,15 @@
 
     background-image: url("../../assets/background-profile.png");
     background-size: 1200px;
+    border-radius: 5px;
 }
 
 .containerItem {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-}
-
-.containerBody {
-    position: relative;
-    display: flex;
-    width: 80%;
-    height: 90%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-
-
-    h1 {
-        font-family: Roboto, sans-serif;
-        font-size: 28px;
-        font-weight: 700;
-    }
+    width: 100%;
 
 }
 
@@ -43,12 +26,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    p {
-        font-size: 12px;
-        font-family: Roboto, sans-serif;
-        font-weight: lighter;
-    }
+    width: 60%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #494949;
 }
 
 .image {
@@ -59,7 +40,8 @@
 
     img {
         width: auto;
-        height: 400px;
+        height: 300px;
+        border-radius: 5px;
     }
 }
 
@@ -67,23 +49,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 20px;
     width: 50%;
-    height: 100%;
+    margin-right: 40px;
 
     h1 {
         font-size: 22px;
         font-family: Roboto, sans-serif;
-        font-weight: 700;
+        font-weight: 400;
         text-align: center;
-
+        color: rgb(255, 255, 255);
+        margin-bottom: 30px;
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
         font-family: Roboto, sans-serif;
-        font-weight: 400;
+        font-weight: lighter;
         text-align: justify;
+        color: rgb(255, 255, 255);
     }
 
     h3 {
@@ -91,5 +74,6 @@
         font-family: Roboto, sans-serif;
         font-weight: lighter;
         text-align: center;
+        color: rgb(255, 255, 255);
     }
 }
