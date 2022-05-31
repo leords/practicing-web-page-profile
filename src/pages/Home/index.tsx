@@ -2,29 +2,41 @@ import React from "react";
 
 import styles from './styles.module.scss'
 
-import { CarouselItem } from "../Carousel";
-import { Header } from "../Header";
-import { Profile } from "../Profile";
-import { Contact } from "../Contact";
-import { Footer } from "../Footer";
-import { TypeProject } from "../TypeProject";
-import { TopAnchor } from "../../component/TopAnchor";
+import { CarouselItem } from "../../component/Carousel";
+import { Header } from "../../component/Header";
+import { Profile } from "../../component/Profile";
+import { Contact } from "../../component/Contact";
+import { Footer } from "../../component/Footer";
+import { TypeProject } from "../../component/TypeProject";
+import { Phrase } from "../../component/Phrase";
+
+
+import wppLogo from '../../assets/whatsapp.png';
 
 
 export function Home() {
     return (
         <div className={styles.container}>
-            <div id="Home">
+            <div className={styles.connectWpp}>
+                <a 
+                    href="https://api.whatsapp.com/send?phone=5547989118694&text=Ol%C3%A1%2C%20"
+                    target={"_blank"}
+                >
+                    <img src={wppLogo} alt="" />
+
+                </a>
+            </div>
+            <div id="Home" className={styles.home}>
                 <Header />
             </div>
-            <div>
+            <div className={styles.carousel}>
                 <CarouselItem />
+            </div>
+            <div>
+                <Phrase />
             </div>
             <div id="Profile" className={styles.profile}>
                 <Profile />
-            </div>
-            <div className={styles.topAnchor}>
-                <TopAnchor />
             </div>
             <div id="Project" className={styles.project}>
                 <TypeProject />

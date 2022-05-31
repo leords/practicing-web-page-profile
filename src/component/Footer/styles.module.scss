@@ -1,0 +1,130 @@
+.container {
+    display: block;
+    flex-direction: column;
+}
+
+.containerProfessionalInformation {
+    background-color: #363636;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.profissionalLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    img {
+        width: 150px;
+        height: 150px;
+        padding: 40px;
+        margin-left: 10%;
+    }
+}
+
+.professionalDescriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    .nameProfessional {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: Roboto, sans-serif;
+        color: aliceblue;
+    }
+}
+
+.containerSocialNetworks {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 40px;
+
+    h1 {
+        font-size: 18px;
+        font-family: Roboto, sans-serif;
+        font-weight: 700;
+        color: aliceblue; 
+    }
+
+    ul {
+        width: 35%;
+        li {
+            margin-bottom: 20px;
+            list-style-type: none;
+            
+            .itemMenu {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+
+                a {
+                    font-size: 16px;
+                    font-family: Roboto, sans-serif;
+                    font-weight: 100;
+                    text-decoration: none;
+                    color: aliceblue;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+.developmentDescriptions {
+    background-color:#494949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+    p {
+        font-size: 13px;
+        font-family: Roboto, sans-serif;
+        font-weight: 100;
+        color: aliceblue;
+    }
+}
+
+@media(max-width: 575px) {
+    
+    .containerProfessionalInformation {
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .developmentDescriptions {
+        p {
+            font-size: 12px;
+            padding: 5px;
+            text-align: center;
+        }
+    }
+
+    .profissionalLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+        img {
+            width: 120px;
+            height: 120px;
+            padding: 40px;
+            margin-top: 20px;
+            margin-left: 10%;
+        }
+    }
+  }
+

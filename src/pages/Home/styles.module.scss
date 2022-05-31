@@ -5,21 +5,20 @@
     flex-direction: column; 
     position: relative;
 }
+.connectWpp {
+    display: flex;
+    height: 0px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
 
-.topAnchor {
-    position: -webkit-sticky;
+    padding-right: 20px;
     position: sticky;
-    top: 0;
-    z-index: 8;
-    display: none;  
-}
+    top: 98%;
 
-.profile:hover + .topAnchor {
-    display: block;
-}
-.project:hover + .topAnchor {
-    display: block;
-}
-.contact:hover + .topAnchor {
-    display: block;
+    z-index: 10;
+
+    img {
+        width: 80px;
+    }
 }

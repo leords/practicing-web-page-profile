@@ -1,0 +1,169 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 40px;
+        font-family: 'Parisienne', cursive;
+        font-weight: 400;
+    }
+}
+
+.containerLogoSocialNetworking {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    margin: 5px;
+}
+
+.containerDeviceContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerEmailContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    border-left: solid 2px;
+}
+
+.containerMapContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    border-left: solid 2px;
+}
+
+.informationForLogo {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;    
+    margin: 5px;
+
+    p {
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        font-weight: 100;
+
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    margin: 10px;
+
+    h1 {
+        font-size: 40px;
+        font-family: 'Parisienne', cursive;
+        font-weight: 400;
+    }
+}
+
+.containerSubmitEmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    width: 80%;
+    padding: 40px;
+    margin: 5px;
+    gap: 10px;
+    margin-bottom: 120px;
+
+    background-color: rgb(240, 240, 240);
+
+
+
+    input {
+        width: 60%;
+        height: 30px;
+        padding-left: 5px;
+
+        border-width: solid 1px;
+        border-color: #8f8f8f;
+        border-radius: 2px;
+    }
+
+    textarea {
+        width: 60%;
+        height: 90px;
+        padding: 5px;
+        border-style: none;
+        border-radius: 2px;
+    }
+
+    button {
+        width: 60%;
+        height: 40px;
+        border-style: none;
+        background-color: #4b4a4a;
+        color: white;
+        border-radius: 2px;
+        font-size: 14px;
+    }
+    button:hover {
+        background-color: #393939;
+    }
+}
+
+@media(max-width: 575px) {
+    .containerLogoSocialNetworking {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .containerDeviceContact {
+        padding-top: 15px;
+        border-top: solid 1px;
+        border-left: solid 1px;
+        border-right: solid 1px;
+    }
+    .containerEmailContact {
+        border-left: 0px;
+        border-left: solid 1px;
+        border-right: solid 1px;
+    }
+    .containerMapContact {
+        border-left: 0px;
+        border-left: solid 1px;
+        border-right: solid 1px;
+        border-bottom: solid 1px;
+    }
+}

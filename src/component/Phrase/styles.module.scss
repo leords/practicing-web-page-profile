@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    margin: 60px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #393939 transparent;
+}
+
+.phraseContainer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.phrase {
+    width: 100%;
+    font-size: 35px;
+    font-family: 'Parisienne', cursive;
+    font-weight: 400;
+    color: #393939;
+}
+
+.author {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+
+    font-size: 24px;
+    font-family: 'Parisienne', cursive;
+    font-weight: 400;
+    color: #393939;
+}
+
+@media(max-width: 600px) {
+
+    .phraseContainer {
+        width: auto;
+        margin: 0 auto;
+    }
+    
+    .phrase {
+        //width: %;
+        font-size: 22px;
+        font-family: 'Parisienne', cursive;
+        font-weight: 400;
+        color: #393939;
+    }
+    
+    .author {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    
+        font-size: 14px;
+        font-family: 'Parisienne', cursive;
+        font-weight: 400;
+        color: #393939;
+    }
+}

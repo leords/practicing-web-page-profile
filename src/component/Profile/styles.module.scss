@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 40px;
+    background-color: #494949;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    padding: 0px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+
+    img {
+        width: auto;
+        height: 500px;
+    }
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+
+    h1 {
+        font-size: 40px;
+        font-family: 'Parisienne', cursive;
+        font-weight: 400;
+        color: #393939;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: Roboto, sans-serif;
+        text-align: justify;
+        font-weight: 400;
+        line-height: 1.5;
+        
+        color: #393939
+    }
+
+    h3 {
+        font-size: 22px;
+        font-family: 'Parisienne', cursive;
+        font-weight: lighter;
+        text-align: center;
+        color: #393939
+    }
+}
+
+@media(max-width: 600px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+
+        img {
+            width: auto;
+            height: 300px;
+        }
+    }
+
+    .description {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        
+        padding-left: 40px;
+        padding-right: 40px;
+        
+        //background-color: aqua;
+
+        h1 {
+            font-size: 26px;
+            font-family: 'Parisienne', cursive;
+            font-weight: 400;
+            color: #393939;
+        }
+    
+        p {
+            font-size: 13px;
+            font-family: Roboto, sans-serif;
+            text-align: justify;
+            font-weight: 400;
+            line-height: 1.5;
+            
+            color: #393939
+        }
+    
+        h3 {
+            font-size: 18px;
+            font-family: 'Parisienne', cursive;
+            font-weight: lighter;
+            text-align: center;
+            color: #393939
+        }
+    }
+}
